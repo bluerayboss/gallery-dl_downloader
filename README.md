@@ -21,4 +21,4 @@
 *안해도 됨, 그냥 사용해도 됨*
 
 `config`은 본인이 스스로 알아서 수정하는 방법 밖에 없음...  
-gallery-dl --list-keywords url
+gallery-dl --list-keywords (url) > cmd 명령어 실행
