@@ -3,6 +3,7 @@
 ---
 
 ### 📥 요구사항
+
 Python 3.4+
 pip install gallery-dl
 ---
