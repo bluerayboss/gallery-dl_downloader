@@ -1,0 +1,34 @@
+{
+  "extractor": {
+    "kemonoparty": {
+      "fanbox": {
+        "directory": ["kemonoparty", "{service}", "{user}"],
+        "filename": "{title}_{num}.{extension}"
+      },
+      "gumroad": {
+        "directory": ["kemonoparty", "{service}", "{user}"],
+        "filename": "{title}_{num}.{extension}"
+      },
+      "patreon": {
+        "directory": ["kemonoparty", "{service}", "{user}"],
+        "filename": "{title}_{num}.{extension}"
+      },
+      "fantia": {
+        "directory": ["kemonoparty", "{service}", "{user}"],
+        "filename": "{title}_{num}.{extension}"
+      }        
+    },
+    "exhentai": {
+      "filename": "{num}.{extension}"
+    },
+    "twitter": {
+      "username": "",
+      "password": "",
+      "filename": "{author[name]}-{tweet_id}-({date:%Y%m%d_%H%M%S})-img{num}.{extension}"
+    },
+    "danbooru": {
+      "directory": ["danbooru", "{search_tags}"],
+      "filename": "{id}.{extension}"
+    }
+  }
+}
