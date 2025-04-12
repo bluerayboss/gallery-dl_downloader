@@ -8,7 +8,6 @@ import re
 import signal
 import requests
 from PIL import Image
-from tkinter import ttk
 
 from logic.config import load_stored_output_dir, store_output_dir
 
@@ -35,24 +34,6 @@ class GalleryDLGUI:
     def init_ui(self):
         self.url_var = tk.StringVar()
         font = ("Consolas", 14)
-
-        style = ttk.Style()
-        style.theme_use('default')
-
-        style.configure("Custom.Vertical.TScrollbar",
-            gripcount=0,
-            background="#ff4444",
-            troughcolor=HACKER_BG,
-            bordercolor=HACKER_BG,
-            lightcolor=HACKER_BG,
-            darkcolor=HACKER_BG,
-            arrowsize=0,
-            relief="flat"
-        )
-
-        style.map("Custom.Vertical.TScrollbar",
-            background=[("active", "#ff6666"), ("pressed", "#cc0000")]
-        )
 
         top_frame = tk.Frame(self.root, bg=HACKER_BG)
         top_frame.pack(padx=10, pady=15, fill="x")
@@ -102,22 +83,15 @@ class GalleryDLGUI:
         filters_frame.pack(pady=5)
         tk.Label(filters_frame, text="다운받을 확장자 선택 (미선택시 전체 다운)", font=font, fg=HACKER_GREEN, bg=HACKER_BG).pack(side=tk.LEFT)
 
-        log_frame = tk.Frame(self.root, bg=HACKER_BG)
-        log_frame.pack(padx=10, pady=5, fill="both", expand=True)
-
-        self.output_log = tk.Text(log_frame, width=90, height=24,font=("Consolas", 10),bg="black", fg=HACKER_GREEN,insertbackground=HACKER_GREEN,relief="flat", wrap="word")
-        scrollbar = tk.Scrollbar(log_frame,command=self.output_log.yview,troughcolor="#222",bg=HACKER_ACCENT,activebackground=HACKER_GREEN,relief="flat",width=12)
-
-        self.output_log.configure(yscrollcommand=scrollbar.set)
-        self.output_log.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
-
         for ext, var in self.filter_vars.items():
             cb = tk.Checkbutton(filters_frame, text=ext, variable=var, font=font,bg=HACKER_BG, fg=HACKER_GREEN, selectcolor=HACKER_DARK,activebackground=HACKER_DARK, activeforeground=HACKER_GREEN)
             cb.pack(side=tk.LEFT, padx=5)
 
         self.cancel_button = tk.Button(self.root, text="⛔ 취소", font=font,bg="#FF3131", fg="black", relief="flat", command=self.cancel_download, state=tk.DISABLED)
         self.cancel_button.pack(pady=5)
+
+        self.output_log = scrolledtext.ScrolledText(self.root, width=90, height=24,font=("Consolas", 10), bg="black", fg=HACKER_GREEN, insertbackground=HACKER_GREEN)
+        self.output_log.pack(padx=10, pady=5)
 
         self.status_var = tk.StringVar(value="상태: 대기중")
         self.status_label = tk.Label(self.root, textvariable=self.status_var, anchor='w',font=font, bg=HACKER_BG, fg=HACKER_GREEN)
