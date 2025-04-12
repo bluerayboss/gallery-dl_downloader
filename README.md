@@ -34,4 +34,4 @@ gallery-dl --list-keywords (url) > cmd 명령어 실행
 
 ```bash
 gallery-dl --list-keywords (url)
-```bash
+```
