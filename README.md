@@ -5,7 +5,7 @@
 
 Python 3.4+  
 pip install gallery-dl
----
+
 
 ### 🔧 변경사항
 
