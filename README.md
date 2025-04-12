@@ -9,7 +9,7 @@
 ### Pip
 ```bash
 python3 -m pip install -U gallery-dl
-```bash
+```
 ---
 
 ### 🔧 변경사항
