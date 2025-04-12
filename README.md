@@ -4,9 +4,11 @@
 
 ### 📥 요구사항
 
-Python 3.4+  
-pip install gallery-dl
+## Installation
 
+### Pip
+```bash
+python3 -m pip install -U gallery-dl
 ---
 
 ### 🔧 변경사항
