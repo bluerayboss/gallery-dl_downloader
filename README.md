@@ -9,6 +9,7 @@
 ### Pip
 ```bash
 python3 -m pip install -U gallery-dl
+```bash
 ---
 
 ### 🔧 변경사항
@@ -30,3 +31,7 @@ python3 -m pip install -U gallery-dl
 
 `config`은 본인이 스스로 알아서 수정하는 방법 밖에 없음...  
 gallery-dl --list-keywords (url) > cmd 명령어 실행
+
+```bash
+gallery-dl --list-keywords (url)
+```bash
