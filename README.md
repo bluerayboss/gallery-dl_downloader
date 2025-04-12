@@ -14,7 +14,7 @@
 ---
 
 ### ⚙️ config.json 설정법
-
+Robot.txt 파일은 삭제해도 무관합니다.
 `config.json`에 있는 내용을 전체 선택 후  
 `C:\\Users\\계정폴더\\gallery-dl\\config.json` 에 덮어쓰기 하면 됩니다.  
 (※ `config 열기` 버튼 클릭 후 거기에 넣으면 됨)  
