@@ -1,11 +1,13 @@
 ![Image](https://github.com/user-attachments/assets/fce71699-0fd9-47da-a567-d5344f8f64d5)
 
 ---
+
 ### 📥 요구사항
 
 Python 3.4+  
 pip install gallery-dl
 
+---
 
 ### 🔧 변경사항
 
