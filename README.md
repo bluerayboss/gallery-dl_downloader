@@ -5,7 +5,7 @@
 ### 📥 요구사항
 
 ## Installation
-
+Python 3.4+  
 ### Pip
 ```bash
 python3 -m pip install -U gallery-dl
