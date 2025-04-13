@@ -11,7 +11,7 @@ https://www.python.org/downloads/
 ```
 ### Pip
 ```bash
-python3 -m pip install -U gallery-dl
+pip install -U gallery-dl
 ```
 ---
 
