@@ -17,7 +17,6 @@ pip install -U gallery-dl
 
 ### 🔧 변경사항
 
-※ webp > jpg 강제 변환 기능 제거  
 ※ +url/-url 기능 추가  
 ※ 파일 이름 미리 설정 (ex:{파일이름}_1.jpg..) 이런 형식  
 ※ 에러시 3번 재시도  
